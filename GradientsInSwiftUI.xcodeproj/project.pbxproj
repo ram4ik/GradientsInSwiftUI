@@ -13,6 +13,9 @@
 		95404C532473C46E0071C24D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95404C522473C46E0071C24D /* Assets.xcassets */; };
 		95404C562473C46E0071C24D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95404C552473C46E0071C24D /* Preview Assets.xcassets */; };
 		95404C592473C46E0071C24D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95404C572473C46E0071C24D /* LaunchScreen.storyboard */; };
+		95404C672473C5F20071C24D /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95404C662473C5F20071C24D /* LinearGradientView.swift */; };
+		95404C692473C64F0071C24D /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95404C682473C64F0071C24D /* RadialGradientView.swift */; };
+		95404C6B2473C6EE0071C24D /* AngularGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95404C6A2473C6ED0071C24D /* AngularGradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		95404C552473C46E0071C24D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95404C582473C46E0071C24D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95404C5A2473C46E0071C24D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95404C662473C5F20071C24D /* LinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
+		95404C682473C64F0071C24D /* RadialGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
+		95404C6A2473C6ED0071C24D /* AngularGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularGradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		95404C4B2473C46C0071C24D /* GradientsInSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				95404C602473C4840071C24D /* Gradients */,
 				95404C4C2473C46C0071C24D /* AppDelegate.swift */,
 				95404C4E2473C46C0071C24D /* SceneDelegate.swift */,
 				95404C502473C46C0071C24D /* ContentView.swift */,
@@ -73,6 +80,40 @@
 				95404C552473C46E0071C24D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95404C602473C4840071C24D /* Gradients */ = {
+			isa = PBXGroup;
+			children = (
+				95404C632473C4950071C24D /* LinearGradient */,
+				95404C622473C4920071C24D /* RadialGradient */,
+				95404C612473C48E0071C24D /* AngularGradient */,
+			);
+			path = Gradients;
+			sourceTree = "<group>";
+		};
+		95404C612473C48E0071C24D /* AngularGradient */ = {
+			isa = PBXGroup;
+			children = (
+				95404C6A2473C6ED0071C24D /* AngularGradientView.swift */,
+			);
+			path = AngularGradient;
+			sourceTree = "<group>";
+		};
+		95404C622473C4920071C24D /* RadialGradient */ = {
+			isa = PBXGroup;
+			children = (
+				95404C682473C64F0071C24D /* RadialGradientView.swift */,
+			);
+			path = RadialGradient;
+			sourceTree = "<group>";
+		};
+		95404C632473C4950071C24D /* LinearGradient */ = {
+			isa = PBXGroup;
+			children = (
+				95404C662473C5F20071C24D /* LinearGradientView.swift */,
+			);
+			path = LinearGradient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95404C692473C64F0071C24D /* RadialGradientView.swift in Sources */,
+				95404C6B2473C6EE0071C24D /* AngularGradientView.swift in Sources */,
 				95404C4D2473C46C0071C24D /* AppDelegate.swift in Sources */,
 				95404C4F2473C46C0071C24D /* SceneDelegate.swift in Sources */,
 				95404C512473C46C0071C24D /* ContentView.swift in Sources */,
+				95404C672473C5F20071C24D /* LinearGradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
